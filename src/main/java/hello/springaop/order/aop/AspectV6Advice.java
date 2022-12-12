@@ -28,7 +28,7 @@ public class AspectV6Advice {
         log.info("[before] {}", joinPoint.getSignature());
     }
 
-    @AfterReturning(value = "hello.springaop.order.aop.Pointcuts.orderAndService()", returning = "result")
+    @AfterReturning(value = "hello.springaop.order.aop.Pointcuts.orderAndService()", returning = "result") // returning 속성에 사용된 이름은 어드바이스 메서드의 매개변수 이름과 일치해야 한다.
     public void doReturn(JoinPoint joinPoint, Object result) {
         log.info("[return] {} return={}", joinPoint.getSignature(), result);
     }
