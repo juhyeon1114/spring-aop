@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
 import static org.assertj.core.api.Assertions.*;
 
 @Slf4j
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.TxAspect.class}) //추가
+@Import(AspectV6Advice.class) //추가
 @SpringBootTest
 public class AopTest {
 
