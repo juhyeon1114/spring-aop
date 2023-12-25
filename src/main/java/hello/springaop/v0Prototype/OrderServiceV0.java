@@ -1,7 +1,6 @@
-package hello.springaop.v0;
+package hello.springaop.v0Prototype;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Service
