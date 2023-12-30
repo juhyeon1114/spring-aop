@@ -4,4 +4,6 @@ public interface SomeService {
 
     public void find();
 
+    public void save();
+
 }

@@ -8,4 +8,9 @@ public class SomeServiceImpl implements SomeService {
     public void find() {
         log.info("SomeService.find()");
     }
+
+    @Override
+    public void save() {
+        log.info("SomeService.save()");
+    }
 }
