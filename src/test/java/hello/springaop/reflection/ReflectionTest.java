@@ -1,4 +1,4 @@
-package hello.springaop.jdkdynamic;
+package hello.springaop.reflection;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
@@ -29,7 +29,7 @@ public class ReflectionTest {
     @Test
     @DisplayName("reflectionBasic")
     public void reflectionBasic() throws Exception {
-        Class<?> classHello = Class.forName("hello.springaop.jdkdynamic.HelloReflection"); // 클래스의 메타 정보 획득
+        Class<?> classHello = Class.forName("hello.springaop.reflection.HelloReflection"); // 클래스의 메타 정보 획득
 
         HelloReflection helloReflection = new HelloReflection();
 
@@ -45,7 +45,7 @@ public class ReflectionTest {
     @Test
     @DisplayName("reflectionDynamic - 동적으로 코드 조작이 가능하다")
     public void reflectionDynamic() throws Exception {
-        Class<?> classHello = Class.forName("hello.springaop.jdkdynamic.HelloReflection");
+        Class<?> classHello = Class.forName("hello.springaop.reflection.HelloReflection");
 
         HelloReflection helloReflection = new HelloReflection();
 

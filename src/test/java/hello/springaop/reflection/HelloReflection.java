@@ -1,4 +1,4 @@
-package hello.springaop.jdkdynamic;
+package hello.springaop.reflection;
 
 import lombok.extern.slf4j.Slf4j;
 
