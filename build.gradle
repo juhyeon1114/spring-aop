@@ -30,6 +30,12 @@ dependencies {
 	testAnnotationProcessor 'org.projectlombok:lombok'
 }
 
+tasks {
+	clean {
+		delete 'out'
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
