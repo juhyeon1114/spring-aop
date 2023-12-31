@@ -1,10 +1,13 @@
 package hello.springaop;
 
+import hello.springaop.trace.logtrace.FieldLogTrace;
+import hello.springaop.trace.logtrace.LogTrace;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 //@SpringBootApplication
-@SpringBootApplication(scanBasePackages = "hello.springaop.section4")
+@SpringBootApplication(scanBasePackages = "hello.springaop.v5autoproxy")
 public class SpringAopApplication {
 
 	public static void main(String[] args) {

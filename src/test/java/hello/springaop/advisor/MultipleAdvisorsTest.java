@@ -13,7 +13,7 @@ import org.springframework.aop.support.DefaultPointcutAdvisor;
 
 public class MultipleAdvisorsTest {
     @Test
-    @DisplayName("여러 프록시 적용")
+    @DisplayName("여러 프록시 적용 : 프록시 2번 생성")
     public void advisorTest1() throws Exception {
         // 프록시 1 생성
         SomeService service = new SomeServiceImpl();
@@ -33,7 +33,7 @@ public class MultipleAdvisorsTest {
     }
 
     @Test
-    @DisplayName("여러 프록시 적용2")
+    @DisplayName("여러 프록시 적용 : 프록시 1번 생성")
     public void advisorTest2() throws Exception {
         // Advisor 생성
         DefaultPointcutAdvisor advisor1 = new DefaultPointcutAdvisor(Pointcut.TRUE, new Advice1());
