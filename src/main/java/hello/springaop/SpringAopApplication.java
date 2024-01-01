@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 //@SpringBootApplication
-@SpringBootApplication(scanBasePackages = "hello.springaop.aop")
+@SpringBootApplication(scanBasePackages = "hello.springaop.aopInternalCall")
 public class SpringAopApplication {
 
 	public static void main(String[] args) {
